@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <style>
+    body {
+    font-family:'Segoe UI', sans-serif;
+    background:linear-gradient(to right,lightcyan,white);
+    ccolor:black;
+    margin:0;
+    padding:40px;
+    }
+    h1 {
+    text-align:center;
+    color:teal;
+    margin-bottom:30px;
+    }
+        form {
+            max-width:600px;
+            background-color:white;
+            margin:auto;
+            padding:25px 40px;
+            box-shadow: 0 4px 10px rgba(0,0,0.1);
+        }
+        label {
+            display:block;
+            margin-top: 15px;
+            font-weight:bold;
+            color:seagreen;
+            
+        }
+        input[type="text"],
+        input[type="mail"],
+        input[type="password"],
+         select,
+         input[type="file"] {
+             width:100%;
+             padding:10px;
+             marginto:5px;
+             border:1 px soild lightseagreen;
+             border-radius: 8px;
+             background-color:aliceblue;
+         }
+        input[ type="radio"],
+        input[type="checkbox"] {
+            margin-right:10px;
+        }
+        input[type="submit"],
+        input[type="reset"]
+        {
+            padding:10x 20px;
+            border:none;
+            border-radius:8px;
+            background-color:mediumturquoise;
+            color:white;
+            cursor:pointer;
+            margin-top:20px;
+            margin-right:10px;
+            front-weight:bold;
+         
+        }
+        iuput[type="submit"]:hover;
+        input[type="reset"]:hover;{
+            backgroundcolor:cadetblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>about details</h1>
+    <form action="/submit" method="past">
+     <lable for="name">Name:</lable>
+      <input type="text"id="name"name="name"><br> <br>
+      <lable for="mail">mail:</lable>
+        <input type="mail"id="mail"name="mail"><br> <br>
+        <lable for="password">password:</lable>
+        <input type="password"id="password "name="password"><br><br>
+   <label for="group">Group:-</label> <br>
+       <input type="radio" id="group" name="group" value="bsc">
+       <lable for="bsc" style="display:inline">BSC</lable><br>
+        <input type="radio" id="group" name="group" value="bzc">
+       <lable for="bzc" style="display:inline">BZC</lable><br>
+        <input type="radio" id="group" name="group" value="b.com">
+       <lable for="b.com" style="display:inline">B.COM</lable><br>
+        <input type="radio" id="group" name="group" value="ba">
+       <lable for="ba" style="display:inline">BS</lable><br><br>
+       <label for="course">INTERNSHIP COURSE</label>
+   <select id="course" name="course">
+   <option value="">SELECT></option>
+   <option value="python">PYTHON></option>      
+   <option value="ai">AI</option>       
+    <option value="digital marketing">DIGITAL MARKETING</option>        
+      <option value="syber ceurity">SYBER CEURITY</option>     
+       </select><br><br>
+       <label>skills/interests</label><br><br>
+       <label> <input type="checkbox"name="skills"value="communication">COMMUNICATION SKILLS</label><br><br>
+       <label> <input type="checkbox"name="skills"value="laeadership">LEADERSHIP SKILLS</label><br><br>
+       <label> <input type="checkbox"name="skills"value="problem solving">PROBLEM SOLVING SKILLS</label><br><br>
+       <label> <input type="checkbox"name="skills"value="team work">TEAM WORK SKILLS</label><br><br>
+       <label for="file">uplode payment receipt</label>
+       <input type="file" id="file"name="file"accept=".pdf"><br><br>
+        <input type="submit"value="submit">
+        <input type="reset"value="reset"><br><br>
+    </form>
+</body>
+</html>
